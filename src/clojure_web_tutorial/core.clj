@@ -4,12 +4,35 @@
   (:require
     [ring.adapter.jetty :as jetty]
     [compojure.core :refer :all]
-    [compojure.route :as route]))
+    [compojure.route :as route]
+    [clojure-web-tutorial.pages :as pages]))
+
+(defn get-page
+  [pagenumber]
+  (cond
+    (= pagenumber "1")
+    (pages/intro-page)
+
+    (= pagenumber "2")
+    (html "")
+
+    (= pagenumber "3")
+    (html "")
+
+    (= pagenumber "4")
+    (html "")
+
+    (= pagenumber "5")
+    (html "")
+
+    :else
+    (html (html [:h1 "Page not found."]))))
+
 
 (defroutes app-routes
   "Defines handling for each route"
-  (GET "/" [] (html [:h1 "It's working!"]))
-  (GET "/name/:myname" [myname] (html [:h2 (str "Your name is " myname ".")]))
+  (GET "/" [] (get-page "1"))
+  (GET "/pages/:page-number" [page-number] (get-page page-number))
   (route/not-found "404 Page not found."))
 
 (defn -main
