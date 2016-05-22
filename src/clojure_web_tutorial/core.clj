@@ -18,7 +18,7 @@
 (defn -main
   "This function runs the Jetty web server and handles requests."
   [& args]
-  (let [port (Integer. (or (env :port) 5000))]
+  (let [port (Integer. (get (System/getenv) "PORT" "5000"))]
     (jetty/run-jetty
       app-routes
-      {:port 5000})))
+      {:port port})))
