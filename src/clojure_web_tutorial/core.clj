@@ -5,7 +5,8 @@
     [ring.adapter.jetty :as jetty]
     [compojure.core :refer :all]
     [compojure.route :as route]
-    [clojure-web-tutorial.pages :as pages]))
+    [clojure-web-tutorial.pages :as pages]
+    [environ.core :refer [env]]))
 
 
 (defroutes app-routes
@@ -17,6 +18,7 @@
 (defn -main
   "This function runs the Jetty web server and handles requests."
   [& args]
-  (jetty/run-jetty
-    app-routes
-    {:port 5000}))
+  (let [port (Integer. (or (env :port) 5000))]
+    (jetty/run-jetty
+      app-routes
+      {:port 5000})))
