@@ -280,17 +280,21 @@
         [:p "You should be able to deploy this app to any cloud provider that supports java .jar files.  For this
             tutorial we'll use Heroku since it's free.  First you'll need to sign up for an account.  Heroku has a good
             explanation of the deployment process "
-            (link-to "https://devcenter.heroku.com/articles/getting-started-with-clojure#deploy-the-app" "here") "."
-            [:p "Basically you are using the heroku command line tool to create a
+            (link-to "https://devcenter.heroku.com/articles/getting-started-with-clojure#deploy-the-app" "here") "."]
+
+        [:p "Basically you are using the heroku command line tool to create a
             new heroku app in the same directory as your lein project.
-            Install the heroku tool using " [:b "brew install heroku"] ".
-            You can then create your app using " [:b "heroku create"] ". This links the heroku app to your local git repository.
-            Then you can push your app to heroku by simply running "]]]
-            [:b "git push heroku master"]
-            ".  You'll be prompted for your heroku email and password.
-            You will see the application's url printed to the console as a
-            result of running that command.  Try going to the url and seeing
-            if your app shows up."]
+            Install the heroku tool using "
+          [:b "brew install heroku"] "."
+          "You can then create your app using "
+          [:b "heroku create"]
+          ". This links the heroku app to your local git repository.
+          Then you can push your app to heroku by simply running "
+          [:b "git push heroku master"]
+          ".  You'll be prompted for your heroku email and password.
+          You will see the application's url printed to the console as a
+          result of running that command.  Try going to the url and seeing
+          if your app shows up."]
 
         (link-to {:class "btn btn-primary"} "/pages/5" "< Previous page")
         (link-to {:class "btn btn-primary"} "/pages/7" "Next Page >")]]))
