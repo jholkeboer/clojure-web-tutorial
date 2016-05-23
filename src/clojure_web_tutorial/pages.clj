@@ -82,8 +82,10 @@
         [:p "Then, in "
           [:b "core.clj"]
           " you can edit the main function to do whatever you want.  On the command line,
-          you can run the app by doing " [:b "lein run"] ".  It will then execute in the main function.
-          In the next step we'll learn how to make it run a web server."]]
+          you can run the app by doing "
+          [:b "lein run"]
+          ".  It will then execute in the main function.
+          In the next step we'll learn how to make it run a web server."]
 
 
         [:p (link-to {:class "btn btn-primary"} "/pages/2" "Next page >")]
