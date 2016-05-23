@@ -82,8 +82,8 @@
         [:p "Then, in "
           [:b "core.clj"]
           " you can edit the main function to do whatever you want.  On the command line,
-          you can run the app by doing lein run.  It will then execute in the main function.
-          In the next step we'll learn how to make it run a web server."]
+          you can run the app by doing " [:b "lein run"] ".  It will then execute in the main function.
+          In the next step we'll learn how to make it run a web server."]]
 
 
         [:p (link-to {:class "btn btn-primary"} "/pages/2" "Next page >")]
@@ -116,12 +116,12 @@
         [:p "To get a basic web endpoint set up, we'll use the Ring and Compojure libraries that we required in the last step."]
 
 
-        [:p "Ring leverages the Java Jetty library to create a web server endpoint on the jvm.  By changing your main function in core.clj
+        [:p "Ring leverages the Java Jetty library to create a web server endpoint on the JVM.  By changing your main function in core.clj
              to the following, you can set up a basic endpoint that returns a string on the port of your chocie: "]
 
         [:p "<script src=\"https://gist.github.com/jholkeboer/7820eb03b4e7072afafd2a498d2a7225.js\"></script>"]
 
-        [:p "Once you've made that change, go to the command line an do "
+        [:p "Once you've made that change, go to the command line and do "
             [:b "lein run"]
             ". You should then be able to go to localhost
             at that port and see the string that you put in.  In the above example, you would go to http://localhost:5000 and
@@ -288,8 +288,8 @@
 
 
 
-        (link-to {:class "btn btn-primary"} "/pages/4" "< Previous page")
-        (link-to {:class "btn btn-primary"} "/pages/6" "Next Page >")
+        [:p (link-to {:class "btn btn-primary"} "/pages/4" "< Previous page")
+          (link-to {:class "btn btn-primary"} "/pages/6" "Next Page >")]
         [:br]]]))
 
 (defn deployment
@@ -333,8 +333,8 @@
 
         [:p "<script src=\"https://gist.github.com/jholkeboer/123548993d3fc4a776c70042587db2d1.js\"></script>"]
 
-        (link-to {:class "btn btn-primary"} "/pages/5" "< Previous page")
-        (link-to {:class "btn btn-primary"} "/pages/7" "Next Page >")
+        [:p (link-to {:class "btn btn-primary"} "/pages/5" "< Previous page")
+          (link-to {:class "btn btn-primary"} "/pages/7" "Next Page >")]
         [:br]]]))
 
 (defn source-code
@@ -363,8 +363,8 @@
         [:p "pages.clj"
           [:p "<script src=\"https://gist.github.com/jholkeboer/bf648e809a6b05817144c37606422383.js\"></script>"]]
 
-        (link-to {:class "btn btn-primary"} "/pages/6" "< Previous page")
-        (link-to {:class "btn btn-primary"} "/pages/1" "Start Over")
+        [:p (link-to {:class "btn btn-primary"} "/pages/6" "< Previous page")
+          (link-to {:class "btn btn-primary"} "/pages/1" "Start Over")]
         [:br]]]))
 
 (defn get-page
