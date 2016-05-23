@@ -350,7 +350,7 @@
         [:h2 "Source Code"]
         [:br]
 
-        [:p "The full source code for this project can be found " (link-to "github.com" "here") "."]
+        [:p "The full source code for this project can be found " (link-to "https://github.com/jholkeboer/clojure-web-tutorial" "here") "."]
 
         [:p "Here are the three files we modified in this tutorial: "]
 
