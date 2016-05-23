@@ -322,7 +322,7 @@
           [:b "git push heroku master"]
           ".  You'll be prompted for your heroku email and password.
           You will see the application's url printed to the console as a
-          result of running that command.  The URL will contain randomly generatoed words, e.g. pure-chamber-37511.herokuapp.com.
+          result of running that command.  The URL will contain randomly generated words, e.g. pure-chamber-37511.herokuapp.com.
           Try going to the url and seeing
           if your app shows up."]
 
