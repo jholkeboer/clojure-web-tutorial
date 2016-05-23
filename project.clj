@@ -7,8 +7,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [compojure "1.5.0"]
                  [ring "1.4.0"]
-                 [hiccup "1.0.5"]
-                 [environ "1.0.3"]]
+                 [hiccup "1.0.5"]]
 
   :main ^:skip-aot clojure-web-tutorial.core
   :target-path "target/%s"

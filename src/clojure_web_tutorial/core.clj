@@ -5,9 +5,7 @@
     [ring.adapter.jetty :as jetty]
     [compojure.core :refer :all]
     [compojure.route :as route]
-    [clojure-web-tutorial.pages :as pages]
-    [environ.core :refer [env]]))
-
+    [clojure-web-tutorial.pages :as pages]))
 
 (defroutes app-routes
   "Defines handling for each route"
