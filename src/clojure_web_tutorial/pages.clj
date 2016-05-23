@@ -46,9 +46,9 @@
               management tool that allows the easy creation of Clojure projects and management of depencencies.
               The Java Development Kit is what allows you to execute the Java bytecode that is generated when Clojure compiiles.
               You can find the latest JDK "
-              (link-to "http://www.oracle.com/technetwork/java/javase/downloads/index.html" "here."
+              (link-to "http://www.oracle.com/technetwork/java/javase/downloads/index.html" "here.")
                " This tutorial is assuming you are on OSX or Linux, but this can be done
-               on windows as well.  For details on getting set up with Windows you can refer to ")
+               on windows as well.  For details on getting set up with Windows you can refer to "
               (link-to "https://levlaz.org/installing-leiningen-on-windows/" "this tutorial")]
 
         [:p "To install Leiningen on a Mac you can use Homebrew with "
