@@ -331,7 +331,7 @@
 
         [:p "Here's what the output looks like when I run " [:b "git push heroku master"] " in a successful deployment: "]
 
-        [:p ""]
+        [:p "<script src=\"https://gist.github.com/jholkeboer/123548993d3fc4a776c70042587db2d1.js\"></script>"]
 
         (link-to {:class "btn btn-primary"} "/pages/5" "< Previous page")
         (link-to {:class "btn btn-primary"} "/pages/7" "Next Page >")
