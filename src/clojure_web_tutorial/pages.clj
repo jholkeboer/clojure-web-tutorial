@@ -46,9 +46,9 @@
               management tool that allows the easy creation of Clojure projects and management of depencencies.
               The Java Development Kit is what allows you to execute the Java bytecode that is generated when Clojure compiiles.
               You can find the latest JDK "
-              (link-to "http://www.oracle.com/technetwork/java/javase/downloads/index.html" "here.")
+              (link-to "http://www.oracle.com/technetwork/java/javase/downloads/index.html" "here."
                " This tutorial is assuming you are on OSX or Linux, but this can be done
-               on windows as well.  For details on getting set up with Windows you can refer to "
+               on windows as well.  For details on getting set up with Windows you can refer to ")
               (link-to "https://levlaz.org/installing-leiningen-on-windows/" "this tutorial")]
 
         [:p "To install Leiningen on a Mac you can use Homebrew with "
@@ -77,7 +77,7 @@
               syntax if you haven't already.  You can add the three libraries we'll
               need by adding the following lines into the :dependencies vector"]
 
-        [:p "<script src=\"https://gist.github.com/jholkeboer/cee05d0616e395b110cdee0bdaa19f12.js\"></script>"]
+        [:p "<script src=\"https://gist.github.com/jholkeboer/10a32f1affb449b5af832e9436dccb8a.js\"></script>"]
 
         [:p "Then, in "
           [:b "core.clj"]
